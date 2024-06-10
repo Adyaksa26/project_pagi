@@ -32,7 +32,8 @@
                             </div>
                             <!-- Product actions-->
                             <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">View Detail</a></div>
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" 
+                                href="{{url('detail_cart/'.$p->id)}}">View Detail</a></div>
                             </div>
                             @auth
                             <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
