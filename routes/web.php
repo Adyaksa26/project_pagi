@@ -41,6 +41,8 @@ Route::get('/daftar_nilai', function(){
     // return nilai yang mengarahkan kedalam view yang didalamnya ada folder nilai dan file daftar nilai
     return view('nilai.daftar_nilai');
 });
+Route::get('/apiproduk', [produkController::class, 'produkApi']);
+Route::get('apiproduk/{id}', [produkController::class, 'produkApidetail']);
 // Route::get('/dashboard', function(){
 //     return view('admin.dashboard');
 // });
