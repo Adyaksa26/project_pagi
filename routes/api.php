@@ -10,3 +10,6 @@ Route::get('/user', function (Request $request) {
 
 Route::get('apiproduk', [produkController::class, 'index']);
 Route::get('apiproduk/{id}', [ProdukController::class, 'show']);
+Route::post('/produk-create', [ProdukController::class, 'store']);
+Route::put('/produk/{id}', [ProdukController::class, 'update']);
+Route::delete('/produk/{id}', [ProdukController::class, 'destroy']);
